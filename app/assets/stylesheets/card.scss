@@ -1,0 +1,48 @@
+.card {
+margin-bottom: 26px;
+height: 161px;
+
+
+  &_article {
+    width: 91%;
+    height: 100%;
+    padding-left: 17px;
+    padding-right: 16px;
+    
+    
+    background: #F4F4F4;
+    border-radius: 10px;
+  }
+}
+
+.title_btn_line {
+display: flex;
+}
+.article_title {
+padding-top: 32px;
+width: 90%;
+margin: 0 auto 0 0;
+}
+
+.edit_btn {
+ 
+ display: flex;
+ 
+
+  img {
+
+  width: 24px;
+  height: 6px;
+  margin: 0 0 0 auto;
+  padding-top: 38px;
+  
+  
+  }
+}
+  
+
+
+
+
+ 
+
