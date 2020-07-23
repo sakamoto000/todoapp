@@ -1,5 +1,6 @@
 @import 'card';
 @import 'header';
+@import 'articles';
 
 html {
   word-spacing: 1px;
@@ -27,6 +28,10 @@ body {
   // color: $text-base-color;
 }
 
+a {
+  text-decoration: none;
+  color: #000000;
+}
 .container {
  padding-left: 30px;
  padding-right: 22px;
