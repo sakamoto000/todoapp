@@ -1,52 +1,20 @@
-    <div class="container">  
-      <div class="all_boards">
-        <h2 calss="all_boards_title">All Boards</h2>
-      </div>
+<div class="container">  
+  <div class="Brackets">
+    <h2 calss="Brackets_title">Brackets</h2>
+  </div>
 
-      
+  <% @articles.each do |article| %>
+    <%= link_to article_path(article) do %>
       <div class="card">
-        <div class="card_article">
-        <div class="title_btn_line">
-          <div class="article_title">記事だよ</div>
-          <div class="edit_btn">
-            <%= image_tag 'Combined Shape.png' %>
-          </div>  
+        <div class="eyecatch">
         </div>
+        <div class="card_article">
+          <div class="articles_title">
+              <%= article.title %>
+          </div>
         
         </div>
       </div>
-
-      <div class="card">
-        <div class="card_article">
-        <div class="title_btn_line">
-          <div class="article_title">記事だよ</div>
-          <div class="edit_btn">
-            <%= image_tag 'Combined Shape.png' %>
-          </div>  
-        </div>
-        
-        </div>
-      </div>
-      
-      <div class="card">
-        <div class="card_article">
-        <div class="title_btn_line">
-          <div class="article_title">記事だよ</div>
-          <div class="edit_btn">
-            <%= image_tag 'Combined Shape.png' %>
-          </div>  
-        </div>
-        
-        </div>
-      </div>
-
-      
-
-      
-      
-
-      
-
-      
-
-    </div>
+    <% end %>
+  <% end %>
+</div>
