@@ -6,8 +6,10 @@
 
 font-size: 26px;
 line-height: 36px;
-margin-left: 24px;
+
 margin-right: 20px;
+margin-top: 32px;
+
 
 white-space: nowrap; /* 横幅のMAXに達しても改行しない */
 overflow: hidden; /* ハミ出した部分を隠す */
@@ -15,28 +17,30 @@ text-overflow: ellipsis; /* 「…」と省略 */
 }
 
 .article_edit_btn {
- 
+ margin-left: auto;
 
    img {
     width: 24px;
     height: 6px;
 
     margin-top: 48px;
-    margin-right: 37px;
+   
+
     
   }
 }
 
 .content_box {
-width: 88%;
+width: 100%;
 min-height: 200px;
 height: auto;
-margin-left: 26px;
 margin-top: 32px;
 
 
 background: #F4F4F4;
 border-radius: 10px;
+
+padding-top: 20px;
 
  .content {
   font-style: normal;
@@ -44,10 +48,14 @@ border-radius: 10px;
   font-size: 14px;
   line-height: 19px;
 
-  margin-left: 15px;
-  margin-right: 16px;
-  padding-top: 20px;
+  
+  padding-left: 15px;
   padding-bottom: 26px;
 
  }
+
+}
+
+.comment {
+  margin-top: 35px;
 }
