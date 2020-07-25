@@ -16,18 +16,51 @@ overflow: hidden; /* ハミ出した部分を隠す */
 text-overflow: ellipsis; /* 「…」と省略 */
 }
 
-.article_edit_btn {
- margin-left: auto;
+.article_detail_actions {
+margin-left: auto;
+margin-top: 37px;
+}
 
-   img {
-    width: 24px;
-    height: 6px;
+.dropbtn {
+  border: none;
+  display: flex;
+  width: 30px;
+}
 
-    margin-top: 48px;
-   
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
-    
+.dropdown-content {
+  font-weight: normal;
+  display: none;
+  right: 0;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 15px;
+
+  &.mini {
+    min-width: 100px;
   }
+}
+
+.dropdown-content a {
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+  // color: $text-base-color;
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .content_box {
