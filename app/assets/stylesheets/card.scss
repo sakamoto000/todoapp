@@ -1,3 +1,28 @@
+.new_board {
+width: 362px;
+height: 160px;
+left: 30px;
+top: 917px;
+margin-bottom: 24px;
+
+background: #FFFFFF;
+border: 1px dashed rgba(0, 0, 0, 0.2);
+border-radius: 10px;
+}
+
+.add_new_board {
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+padding-top: 68px;
+
+text-align: center;
+
+color: #000000;
+}
+
 .card {
 margin-bottom: 26px;
 height: 161px;
