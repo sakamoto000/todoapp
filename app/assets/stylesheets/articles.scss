@@ -1,5 +1,6 @@
 .title {
   display: flex;
+  width: 100%;
 }
 
 .article_title {
@@ -9,11 +10,10 @@ line-height: 36px;
 
 margin-right: 20px;
 margin-top: 32px;
+word-break: break-all;
 
 
-white-space: nowrap; /* 横幅のMAXに達しても改行しない */
-overflow: hidden; /* ハミ出した部分を隠す */
-text-overflow: ellipsis; /* 「…」と省略 */
+
 }
 
 .article_detail_actions {
@@ -74,6 +74,7 @@ background: #F4F4F4;
 border-radius: 10px;
 
 padding-top: 20px;
+word-break: break-all;
 
  .content {
   font-style: normal;
@@ -84,6 +85,8 @@ padding-top: 20px;
   
   padding-left: 15px;
   padding-bottom: 26px;
+  padding-right: 14px;
+  word-break: break-all;
 
  }
 

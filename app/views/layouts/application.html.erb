@@ -12,7 +12,12 @@
    
   <body>
     <header class="header">
-      <p class="page_title">Boards</p>
+      <% if !current_page?(root_path) %>
+        <%= link_to :back do %>
+          <p class="back">&lt;back</p> 
+        <% end %>
+      <% end %>
+          <p class="page_title">Boards</p>
     </header>
     <hr>
     <% if flash.present? %>

@@ -1,0 +1,15 @@
+<%= link_to article_path(article) do %>
+  <div class="card">
+    <div class="eyecatch">
+    </div>
+    <div class="card_article">
+      <div class="articles_title">
+          <%= article.title %>
+      </div>
+      <div>
+        <p><%= article.display_created_at %></p>
+      </div>
+    
+    </div>
+  </div>
+<% end %>
