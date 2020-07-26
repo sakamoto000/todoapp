@@ -43,9 +43,19 @@ height: 161px;
 
 .articles_title {
 font-size: 17px;
-padding-top: 32px;
+padding-top: 15px;
+padding-right: 20px;
 width: 90%;
 margin: 0 auto 0 0;
+
+white-space: nowrap; /* 横幅のMAXに達しても改行しない */
+overflow: hidden; /* ハミ出した部分を隠す */
+text-overflow: ellipsis; /* 「…」と省略 */
+}
+
+p {
+  font-size: 12px;
+  margin-top: 5px;
 }
 
 
