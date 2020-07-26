@@ -1,0 +1,8 @@
+.container
+  .Brackets
+    %h2{:calss => "Brackets_title"} Brackets
+  = link_to new_article_path do
+    .new_board
+      .add_new_board +Add new board
+  - @articles.each do |article|
+    = render 'article', article: article

@@ -1,0 +1,8 @@
+= link_to article_path(article) do
+  .card
+    .eyecatch
+    .card_article
+      .articles_title
+        = article.title
+      %div
+        %p= article.display_created_at

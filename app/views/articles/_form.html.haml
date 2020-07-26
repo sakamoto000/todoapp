@@ -1,0 +1,15 @@
+.container
+  %ul
+    - article.errors.full_messages.each do |message|
+      %li= message
+  = form_with(model: @article, local: true) do |f|
+    .new_card New card
+    %div
+      = f.label :title,  class: 'form_title'
+    %div
+      = f.text_field :title, class: 'new_title_box'
+    %div
+      = f.label :content, class: 'form_content'
+    %div
+      = f.text_area :content, class: 'new_content_box'
+    = f.submit 'submit', class: 'btn-primary'

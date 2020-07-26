@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update]
-  
+
   def index
     @articles = Article.all
   end
@@ -9,7 +9,7 @@ class ArticlesController < ApplicationController
   end
 
   def new
-    @article = Article.new 
+    @article = Article.new
   end
 
   def create
@@ -23,8 +23,8 @@ class ArticlesController < ApplicationController
   end
 
   def edit
-  end 
-  
+  end
+
   def update
     if @article.update(article_params)
       redirect_to article_path(@article), notice: '更新できました'
@@ -49,5 +49,4 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
   end
 
- 
-end  
+end

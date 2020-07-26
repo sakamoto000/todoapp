@@ -1,0 +1,21 @@
+.container>
+  .title
+    .article_title
+      = @article.title
+    .article_detail_actions
+      .dropdown
+        = image_tag 'Combined Shape.png', class: 'dropbtn'
+        .dropdown-content.mini
+          = link_to '編集する', edit_article_path(@article)
+          = link_to '削除する', article_path(@article), data: { method: 'delete', confirm: '本当に削除してもよろしいですか？' }
+  %div
+    %p= @article.display_created_at
+  .article_eyecatch
+  .content_box
+    .content
+      = @article.content
+  .comment
+    .comment_title Comment
+    .comment_user_icon
+      .comment_user_content
+1
