@@ -47,4 +47,44 @@ opacity: 0.1;
   margin-bottom: 35px;
 }
 
+.avatar {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 352px;
+  top: 10px;
+  
+  background: url(Image.png);
+  }
 
+  .dropdown-content {
+    position: absolute;
+    top: 35px;
+  }
+
+  .dropdown-content a {
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+    // color: $text-base-color;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: white;
+  }
+  
+  .avatar_dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.header_login_btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: gray;
+  color: white;
+  border-radius: 4px;
+  font-size: 15px;
+  padding: 7px 11px;
+
+}
