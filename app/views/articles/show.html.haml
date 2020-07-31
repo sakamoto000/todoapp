@@ -18,6 +18,13 @@
       = @article.content
   .comment
     .comment_title Comment
-    .comment_user_icon
-      .comment_user_content
-1
+    = link_to new_article_comment_path(@article) do
+      .new_comment_box
+        %p +add new comment 
+    - @comments.each do |comment|
+      .user_comment_box
+        .comment_user_icon
+          = image_tag 'default-avatar.png', class: 'comment_user_avatar'
+        .comment_user_content
+          %p= comment.content
+

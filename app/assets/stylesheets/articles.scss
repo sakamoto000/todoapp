@@ -95,3 +95,49 @@ word-break: break-all;
 .comment {
   margin-top: 35px;
 }
+
+.new_comment_box {
+width: 100%;
+height: 57px;
+margin-top: 25px;
+
+background: #FFFFFF;
+border: 1px dashed rgba(0, 0, 0, 0.2);
+border-radius: 10px;
+
+p {
+font-size: 14px;
+line-height: 19px;
+
+text-align: center;
+padding-top: 12px;
+}
+}
+
+.user_comment_box {
+  width: 100%;
+  margin-top: 32px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  
+
+}
+
+.comment_user_icon {
+  float: left;
+  .comment_user_avatar {
+    width: 40px;
+    height: 40px;
+
+  }
+}
+
+.comment_user_content {
+  overflow: hidden;
+  p {
+    padding-left: 16px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
