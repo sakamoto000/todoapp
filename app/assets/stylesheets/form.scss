@@ -1,6 +1,5 @@
 .new_card {
 margin-top: 37px;
-margin-bottom: 29px;
 font-style: normal;
 font-weight: 800;
 font-size: 26px;
@@ -11,7 +10,9 @@ line-height: 36px;
 color: #000000;
 }
 
+
 .form_title {
+  margin-top: 29px;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -28,7 +29,7 @@ color: #000000;
   height: 40px;
   left: 26px;
   top: 190px;
-  margin-bottom: 33px;
+  margin-bottom: 30px;
   
   border: none;
   background: #F4F4F4;
@@ -50,11 +51,9 @@ color: #000000;
 .new_content_box {
   width: 362px;
   height: 203px;
-  left: 26px;
-  top: 296px;
   
   border: none;
   background: #F4F4F4;
   border-radius: 10px;
-  margin-right: 26px;
+  margin-bottom: 30px;
 }

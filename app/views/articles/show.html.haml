@@ -24,7 +24,8 @@
     - @comments.each do |comment|
       .user_comment_box
         .comment_user_icon
-          = image_tag 'default-avatar.png', class: 'comment_user_avatar'
+          = image_tag @article.user.avatar_image, class: 'comment_user_avatar'
         .comment_user_content
           %p= comment.content
-
+  
+  
