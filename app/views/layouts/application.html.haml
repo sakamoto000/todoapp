@@ -13,7 +13,8 @@
       - if !current_page?(root_path)
         = link_to :back do
           %p.back &lt;back
-      %p.page_title Boards
+      %p.page_title 
+        = link_to 'Boards', root_path
       - if user_signed_in?
         .avatar_dropdown
           = image_tag current_user.avatar_image, class: 'avatar'
