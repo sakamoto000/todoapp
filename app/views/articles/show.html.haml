@@ -12,7 +12,9 @@
   %div
     %p= @article.auther_name
     %p= @article.display_created_at
-  .article_eyecatch
+  - if @article.eyecatch.attached?
+    .article_image
+      = image_tag @article.eyecatch
   .content_box
     .content
       = @article.content
@@ -23,9 +25,10 @@
         %p +add new comment 
     - @comments.each do |comment|
       .user_comment_box
-        .comment_user_icon
-          = image_tag @article.user.avatar_image, class: 'comment_user_avatar'
-        .comment_user_content
-          %p= comment.content
+        - if user_signed_in?
+          .comment_user_icon
+            = image_tag current_user.avatar_image, class: 'comment_user_avatar'
+          .comment_user_content
+            %p= comment.content
   
   

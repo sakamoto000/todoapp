@@ -25,6 +25,7 @@ margin-top: 37px;
   border: none;
   display: flex;
   width: 30px;
+  margin-bottom: 10px;
 }
 
 .dropdown {
@@ -38,10 +39,9 @@ margin-top: 37px;
   right: 0;
   position: absolute;
   background-color: white;
-  min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  margin-top: 15px;
+  margin-top: 5px;
 
   &.mini {
     min-width: 100px;
@@ -63,11 +63,24 @@ margin-top: 37px;
   display: block;
 }
 
+.article_image {
+  
+  img {
+    width: 100%;
+    height: 50%;
+    margin-top: 10px;
+
+    background: url(Image.png);
+    border-radius: 8px;
+  }
+  
+}
+
 .content_box {
 width: 100%;
 min-height: 200px;
 height: auto;
-margin-top: 32px;
+margin-top: 35px;
 
 
 background: #F4F4F4;
@@ -98,8 +111,9 @@ word-break: break-all;
 
 .new_comment_box {
 width: 100%;
-height: 57px;
+height: 65px;
 margin-top: 25px;
+margin-bottom: 25px;
 
 background: #FFFFFF;
 border: 1px dashed rgba(0, 0, 0, 0.2);
@@ -128,6 +142,7 @@ padding-top: 12px;
   .comment_user_avatar {
     width: 40px;
     height: 40px;
+    border-radius: 100%;
 
   }
 }

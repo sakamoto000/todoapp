@@ -11,6 +11,8 @@
       .profilePage_user_introduction
         = current_user.profile&.introduction
         
-
+  = link_to new_article_path do
+    .new_board
+      .add_new_board +Add new board
   - current_user.articles.each do |article|
     = render 'articles/article',article: article

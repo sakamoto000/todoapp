@@ -5,6 +5,10 @@
   = form_with(model: @article, local: true) do |f|
     .new_card New card
     %div
+      = f.label :eyecatch, 'アイキャッチ'
+    %div
+      = f.file_field :eyecatch
+    %div
       = f.label :title,  class: 'form_title'
     %div
       = f.text_field :title, class: 'new_title_box'
